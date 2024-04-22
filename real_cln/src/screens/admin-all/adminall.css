@@ -1,0 +1,120 @@
+.admin-all-main {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 7.5vh;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.admin-all-color-all-con {
+  top: -7.5vh;
+  position: fixed;
+  width: 100%;
+  height: 107.5vh;
+  overflow: hidden;
+  z-index: -1;
+}
+.admin-all-all-one {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 56, 56);
+  width: 30vw;
+  height: 30vh;
+  filter: blur(150px);
+  z-index: -1;
+}
+.admin-all-all-two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60vw;
+  height: 30vh;
+  background-color: rgb(65, 180, 233);
+  filter: blur(150px);
+  z-index: -1;
+}
+.admin-all-con {
+  --max-width: 1310px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-top: 1rem;
+  margin-inline: auto;
+  min-height: 85vh;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  padding-bottom: 2rem;
+}
+.admin-all-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+  overflow-x: hidden;
+  padding-bottom: 2rem;
+}
+.admin-all-grid > .admin-all-card-con {
+  width: 360px;
+  height: 340px;
+  background-color: rgb(254, 252, 252);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: #b6b4b45e 0 8px 8px;
+}
+.img-div-admin-all {
+  height: 65%;
+  overflow: hidden;
+  /* background-color: aqua; */
+}
+.img-div-adnmin-all > img {
+  height: 65%;
+  width: 100%;
+  object-fit: cover;
+}
+.admin-bt-div {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  /* height: 30%; */
+  /* background-color: rebeccapurple; */
+}
+.admin-all-bt {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-all-bt-link {
+  width: 100%;
+  text-decoration: none;
+}
+.admin-all-listing-name {
+  padding: 5px;
+  /* background-color: rebeccapurple; */
+  font-size: 18px;
+  text-transform: capitalize;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

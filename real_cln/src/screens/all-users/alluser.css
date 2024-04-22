@@ -1,0 +1,96 @@
+.all-users-main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 7.5rem;
+  isolation: isolate;
+}
+.all-user-color-all-con {
+  top: -7.5vh;
+  position: fixed;
+  width: 100%;
+  height: 107.5vh;
+  overflow: hidden;
+  z-index: -1;
+}
+.all-user-all-one {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(234, 93, 93);
+  width: 20vw;
+  height: 30vh;
+  filter: blur(150px);
+  z-index: -1;
+}
+.all-user-all-two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60vw;
+  height: 30vh;
+  background-color: rgb(65, 180, 233);
+  filter: blur(150px);
+  z-index: -1;
+}
+.all-user-con {
+  --max-width: 1210px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.all-user-info {
+  width: 100%;
+  height: 10rem;
+  /* background-color: rgb(251, 149, 149); */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(76, 78, 76);
+  padding: 20px;
+}
+.all-user-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* align-items: center; */
+  /* background-color: red; */
+}
+.all-user-info-text>h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1.4px;
+}
+.all-user-delete-bt>button{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out.fade-out-active {
+  opacity: 0;
+}

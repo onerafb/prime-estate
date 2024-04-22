@@ -1,0 +1,70 @@
+.card-main {
+  width: 360px;
+  height: 335px;
+  background-color: rgb(254, 252, 252);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: #b6b4b45e 0 8px 8px;
+}
+.card-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  height: 60%;
+  margin-bottom: 1.5rem;
+}
+.card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-price {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: rgba(1, 1, 1, 0.957);
+  color: white;
+  padding: 5px 10px;
+  margin-left: 1rem;
+  border-radius: 10px;
+  min-width: 2rem;
+  /* box-shadow: #e8e8e86a 0 5px 5px; */
+}
+.card-name > h2 {
+  font-weight: 500;
+  font-size: 23px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.card-wrapper {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.card-bath {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.1rem;
+}
+
+.card-bed {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.2rem;
+}
+.card-price > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

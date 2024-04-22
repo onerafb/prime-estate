@@ -1,0 +1,147 @@
+.create-main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 7.5vh;
+  isolation: isolate;
+  position: relative;
+}
+.create-con {
+  --max-width: 1110px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+  /* background-color: yellowgreen; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.create-one {
+  position: absolute;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 25vh;
+  background-color: rgb(32, 0, 195);
+  filter: blur(150px);
+  z-index: -1;
+}
+.create-two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 20vh;
+  background-color: rgb(255, 10, 157);
+  filter: blur(150px);
+  z-index: -1;
+}
+.create-heading {
+  margin-bottom: 1rem;
+}
+.create-form {
+  width: 600px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+.create-input-div {
+  display: flex;
+  gap: 10px;
+}
+.create-input {
+  resize: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px 10px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 400;
+  /* border-radius: 10px; */
+  background-color: rgb(0, 0, 0);
+  font-family: "Outfit";
+  color: white;
+  transition: 400ms ease;
+}
+
+input[type="file"]::file-selector-button {
+  font-size: 1rem;
+  border: none;
+  background: white;
+  color: rgb(19, 19, 19);
+  font-family: "Outfit";
+  transition: 1.3s;
+  padding: 7px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.create-input::placeholder {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: "Outfit";
+  font-weight: 400;
+}
+.create-name-icon-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.create-checkbox-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.create-checkbox-div-sub {
+  display: flex;
+  gap: 5px;
+}
+.create-checkbox-div-sub > span {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+}
+.create-con > form > button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.create-prp-bt {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 400ms ease;
+}
+.create-checkbox {
+  transform: scale(1.2);
+}
